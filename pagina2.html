@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Tabla</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            flex-direction: row;
+            background-color: rgb(63, 74, 91);
+            width: 80%;
+            display: flex;
+            align-items: center;
+            padding: 100px;
+            padding-bottom: 10px;
+        }
+        .container2 {
+    
+            background-color: rgb(63, 74, 91);
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 40px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .menu {
+            width: 100px;
+            padding: 20px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+            background-color: #cccccc;
+            border-radius: 20px;
+            text-align: center;
+            
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            
+        }
+        .table, .table th, .table td {
+            border: 1px solid #cccccc;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar, .state, .date {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            border: 1px solid #cccccc;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="menu">MENU</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                    <th>Columna 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container2">
+    <input type="text" class="search-bar" placeholder="Barra de Búsqueda">
+        <div style="display: flex; justify-content: space-between; width: 50%;">
+            <input type="text" class="state" placeholder="Estado">
+            <input type="text" class="date" placeholder="Fecha">
+        </div>
+    <section>
+</body>
+</html>
